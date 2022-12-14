@@ -1,27 +1,26 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import Headernav from './blocks/navbar'
+import Navbar from './blocks/navbar'
 import Footer from './blocks/footer'
+import Collection from './blocks/collection'
 import HeroFP from './blocks/hero-frontpage'
 import Steps from './blocks/steps'
-import Collection from './blocks/collection'
-import Thestory from './blocks/thestory'
+import Spacer from './blocks/spacer'
 
-
-export default function Home() {
+export default function RoadMap() {
   return (
     <div className={styles.container}>
       <Head>
         <title>Create Next App</title>
-        <meta name="description" content="The Alien NFT Invasion is imenant. Yes, we are moving forward into a new era of technology." />
+        <meta name="description" content="NFTALIEN Collections are a set of digital collectibles that can be minted on the Polygon Blockchain." />
         <link rel="icon" href="/favicon.ico" />
-        </Head>
-        <Headernav />
+      </Head>
+      <Navbar />
         <HeroFP />
-        <Steps />
         <Collection />
-        <Thestory />
-        <Footer />
+        <Steps />
+        <Spacer />
+      <Footer />
     </div>
   )
 }
