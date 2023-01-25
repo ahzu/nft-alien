@@ -3,7 +3,7 @@ import styles from '../../styles/Home.module.css';
 
 export default function Footer() {
     return (
-        <footer className="container-fluid bg-dark">
+        <footer className={styles.nav_footer_bg}>
           <div className="container px-3 m-auto">
             <div className="row my-1 py-5 justify-content-between g-2 px-3 ">
               <div className="col-xl-2 col-6 text-start mb-3">
@@ -40,15 +40,12 @@ export default function Footer() {
           
           <div className="container px-4 py-4">
             <div className="row">
-              <div className="col-sm text-start pt-2 fw-light">
-                &copy; 2023 Ahzu Direct Tec, LLC
-              </div>
               <div className="col-sm px-3 pt-2 text-start ">
                 <a className="nav-link fw-light"
                   href="https://www.ahzudirecttech.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                > Design By
+                > &copy; 2023 Ahzu Direct Tech, LLC | Design By
                   
                   <span className={styles.logo}>
                     <Image src="/logo.svg" alt="Vercel Logo" width={82} height={20} />

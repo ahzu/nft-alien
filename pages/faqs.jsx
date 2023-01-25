@@ -1,8 +1,9 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Navbar from './blocks/navbar'
 import Footer from './blocks/footer'
+import HeroFP from './blocks/hero-frontpage'
+import FaqAccordian from './blocks/faq-accordian'
 
 export default function FAQs() {
   return (
@@ -13,10 +14,10 @@ export default function FAQs() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <main className={styles.main}>
-      <h1>FAQs</h1>
-        
-      </main>
+        <HeroFP />
+        <FaqAccordian />
+
+
       <Footer />
     </div>
   )

@@ -8,11 +8,12 @@ import Collection from './blocks/collection'
 import Thestory from './blocks/thestory'
 
 
+
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>NFT ALIEN</title>
         <meta name="description" content="The Alien NFT Invasion is imenant. Yes, we are moving forward into a new era of technology." />
         <link rel="icon" href="/favicon.ico" />
         </Head>

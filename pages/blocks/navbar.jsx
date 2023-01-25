@@ -1,4 +1,5 @@
 
+import styles from '../../styles/Home.module.css'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Button from 'react-bootstrap/Button';
@@ -9,16 +10,16 @@ import Navbar from 'react-bootstrap/Navbar';
 
 function Headernav() {
   return (
-    <Navbar sticky="top" collapseOnSelect expand="lg" bg="dark" variant="dark">
-      <Container>
+    <Navbar sticky="top" collapseOnSelect expand="lg"  variant="dark" className={styles.nav_footer_bg}>
+      <Container className="pb-1">
         <Navbar.Brand href="/"><img src="/logo.svg" width="150px" height="45px"/></Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" className={styles.res_nav} />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/about">About</Nav.Link>
-            <Nav.Link href="/collections">Collections</Nav.Link>
-            <Nav.Link href="/faqs">FAQs</Nav.Link>
-            <Nav.Link href="/contact">Contact</Nav.Link>
+            <Nav.Link className="fw-bold text-white" href="/about">About</Nav.Link>
+            <Nav.Link className="fw-bold text-white" href="/collections">Collections</Nav.Link>
+            <Nav.Link className="fw-bold text-white" href="/faqs">FAQs</Nav.Link>
+            <Nav.Link className="fw-bold text-white" href="/contact">Contact</Nav.Link>
             {/**<NavDropdown title="Dropdown" id="collasible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">

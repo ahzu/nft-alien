@@ -5,7 +5,7 @@ export default function Steps () {
     return ( 
     <>
       <div className="container mt-5">
-        <div className="display-5 fs-1 mb-5">HOW DOES <span className={styles.span_text}>NFT ALIEN</span> WORK</div>
+        <div className="display-5 fs-1 mb-5 text-center">HOW DOES <span className={styles.span_text}>NFT ALIEN</span> WORK</div>
             <div className="row py-2 px-3">
                 <div className="col-sm mb-4 m-1">
                 <div className={styles.steps}>

@@ -6,7 +6,7 @@ export default function HeroFP () {
         <>
             <div className={styles.hero}>
                 <div className="container-xl">
-                    <div className="row">
+                    <div className="row text-center">
                         <div className="col-sm-8 mb-5 text-light m-auto">
                             <h1 className="display-4 light text-center ">EXPLORE NFT COLLECTION</h1>
                             <p className="fs-5">A collection of 2525 highly-fashionable NFTs on the ETH Blockchain. Unique, 
